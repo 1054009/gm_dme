@@ -1,0 +1,9 @@
+===============
+    gm_dme
+===============
+
+Creates Lua hooks for IVModelRender::DrawModelExecute
+
+The hooks are named ``PreDrawModelExecute`` and ``PostDrawModelExecute`` with each hook having only a single argument, ``entIndex``
+
+An example for usage can be viewed in ``example.lua``
