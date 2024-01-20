@@ -121,5 +121,7 @@ GMOD_MODULE_CLOSE()
 	MH_DisableHook(MH_ALL_HOOKS);
 	MH_Uninitialize();
 
+	LUA->ReferenceFree(_G_hook_Call);
+
 	return 0;
 }
